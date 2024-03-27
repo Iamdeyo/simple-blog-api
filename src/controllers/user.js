@@ -4,8 +4,7 @@ import responseBody from "../utils/responseBody.js";
 // route GET user/me
 // @access private
 const me = async (req, res) => {
-  console.log(req.user);
-  return responseBody(res, 200, true, "Current User Profile Found");
+  return responseBody(res, 200, true, "Current User Profile Found", req.user);
 };
 
 export { me };

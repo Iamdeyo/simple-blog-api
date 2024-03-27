@@ -22,7 +22,7 @@ const register = async (req, res) => {
     return responseBody(res, 400, false, "All fields are required");
   }
 
-  if (username.lenght < 4) {
+  if (username.length < 4) {
     return responseBody(
       res,
       400,
@@ -30,7 +30,7 @@ const register = async (req, res) => {
       "Username must be at least 4 characters"
     );
   }
-  if (password.lenght < 6) {
+  if (password.length < 6) {
     return responseBody(
       res,
       400,
@@ -87,7 +87,7 @@ const login = async (req, res) => {
     return responseBody(res, 400, false, "All fields are required");
   }
 
-  if (username.lenght < 4) {
+  if (username.length < 4) {
     return responseBody(
       res,
       400,
@@ -95,7 +95,7 @@ const login = async (req, res) => {
       "Username must be at least 4 characters"
     );
   }
-  if (password.lenght < 6) {
+  if (password.length < 6) {
     return responseBody(
       res,
       400,
